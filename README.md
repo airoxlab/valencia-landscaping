@@ -104,13 +104,40 @@ swap, `html lang="es"`), toggle back, preference persisted, no JS errors.
 The Spanish is written as a Spanish-speaking customer in California would say it
 (*adoquines*, *orillado*, *deshierbe*, *césped*), not literal translation.
 
-## Design
+## Design — his own logo and brand colours
 
-Distinct from everything else in this collection:
+**The client sent a photo of his work shirt** and said *"My logo and I like the
+lettuce and red"*. Both are now the basis of the site.
 
-- Leaf green `#4F7D3A` + bark `#1F2A1A` + bloom orange `#C9622F` on warm white.
+**Colours sampled directly from that photo:**
+
+| | |
+|---|---|
+| Maroon / burgundy (his "red") | `#8C2F4C` |
+| Leaf green (his "lettuce") | `#4FCC60` |
+
+The whole palette was rebuilt around them — maroon `#4E1A2E` for headings, the
+bright green for buttons and accents, and a warm off-white `#FBF7F8` page. The
+dark-mode palette was re-derived to match.
+
+**The logo was redrawn as SVG, not traced from the extraction.** The PNG supplied
+(`Valencia Landscaping Green Horseshoe Logo.png`) is unusable — heavy glow,
+blown-out highlights, the horseshoe and laurel detail lost, and it sits on black
+rather than transparent. It was rebuilt from the client's original photo instead:
+
+- `img/logo.svg` — the full crest: arched **VALENCIA**, green horseshoe with nail
+  holes, sprout inside, laurel wreath both sides, **LANDSCAPING** curved below.
+  Used in the footer at 96px.
+- `img/mark.svg` — a simplified horseshoe-and-sprout version. **The full crest is
+  illegible below about 60px** (the arched wordmark turns to mush), so the header
+  uses this instead at 34px. Checked at 2x; both are legible at the sizes used.
+
+Both sit on a maroon chip, matching how the logo appears on his shirt, so they
+read against light and dark backgrounds alike.
+
+Other design notes:
+
 - Fraunces (display serif) + Nunito Sans (body).
-- Inline SVG two-leaf mark on a stem.
 - Eight sections: hero, credential strip, services, "I do everything" band,
   process, licensing, work gallery, service areas, contact.
 - Full dark mode, sticky header, `scroll-margin-top` anchors, reduced-motion
@@ -127,6 +154,9 @@ room, seedlings, farm planting, a building facade).
 2. **Job photos** — essential; there are none anywhere online.
 3. **How long has he been landscaping?** BuildZoom hints at 10+ years.
 4. **Is the Facebook tagline his?** (The page carrying it is a different company.)
+   Note his shirt reads "...NCE" on a banner under the crest — probably
+   "EXPERIENCE", but it is cut off in the photo. **Ask him what it says**, and it
+   can be added to the logo.
 5. **What is the second CSLB licence** BuildZoom mentions?
 6. **Maintenance contracts or installs** — which does he want more of?
 

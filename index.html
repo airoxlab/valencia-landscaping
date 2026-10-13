@@ -8,60 +8,62 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;500;600;700&display=swap">
 <style>
   :root {
-    --paper: #FAFBF7;
-    --paper-deep: #EFF2E9;
-    --bark: #33402C;
-    --bark-deep: #1F2A1A;
-    --leaf: #4F7D3A;
-    --leaf-br: #659B4B;
-    --bloom: #C9622F;
+    --paper: #FBF7F8;
+    --paper-deep: #F2E9EC;
+    --bark: #6E2440;
+    --bark-deep: #4E1A2E;
+    --leaf: #3E9E4C;
+    --leaf-br: #4FCC60;
+    --bloom: #8C2F4C;
     --sky: #4E7FA3;
-    --ink: #212821;
-    --ink-soft: #5D675A;
-    --line: #DDE3D4;
+    --ink: #241A1E;
+    --ink-soft: #6A5A60;
+    --line: #E6D7DC;
     --card: #FFFFFF;
-    --img-bg: #E5EADD;
-    --on-dark: #F3F6ED;
+    --img-bg: #EDDFE4;
+    --on-dark: #F7EFF2;
     --on-accent: #FFFFFF;
+    --vl-green: #4FCC60;
+    --vl-maroon: #8C2F4C;
     --display: "Fraunces", Georgia, serif;
     --body: "Nunito Sans", "Segoe UI", Arial, sans-serif;
     color-scheme: light dark;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper: #14180F;
-      --paper-deep: #0E1109;
-      --bark: #A7BC9A;
-      --bark-deep: #C6D7BA;
-      --leaf: #79AD5F;
-      --leaf-br: #92C878;
-      --bloom: #E07D47;
+      --paper: #170F12;
+      --paper-deep: #110A0D;
+      --bark: #D9A8BA;
+      --bark-deep: #EBC9D5;
+      --leaf: #5FCC6E;
+      --leaf-br: #7FDB8C;
+      --bloom: #E07A9C;
       --sky: #7FA8C6;
-      --ink: #E7EBE2;
-      --ink-soft: #9AA695;
-      --line: #28301F;
-      --card: #1A2015;
-      --img-bg: #232A1D;
-      --on-dark: #0E1109;
-      --on-accent: #14180F;
+      --ink: #EDE3E7;
+      --ink-soft: #A8949C;
+      --line: #2E1E25;
+      --card: #1E1418;
+      --img-bg: #281A20;
+      --on-dark: #110A0D;
+      --on-accent: #170F12;
     }
   }
   :root[data-theme="dark"] {
-    --paper: #14180F;
-    --paper-deep: #0E1109;
-    --bark: #A7BC9A;
-    --bark-deep: #C6D7BA;
-    --leaf: #79AD5F;
-    --leaf-br: #92C878;
-    --bloom: #E07D47;
+    --paper: #170F12;
+    --paper-deep: #110A0D;
+    --bark: #D9A8BA;
+    --bark-deep: #EBC9D5;
+    --leaf: #5FCC6E;
+    --leaf-br: #7FDB8C;
+    --bloom: #E07A9C;
     --sky: #7FA8C6;
-    --ink: #E7EBE2;
-    --ink-soft: #9AA695;
-    --line: #28301F;
-    --card: #1A2015;
-    --img-bg: #232A1D;
-    --on-dark: #0E1109;
-    --on-accent: #14180F;
+    --ink: #EDE3E7;
+    --ink-soft: #A8949C;
+    --line: #2E1E25;
+    --card: #1E1418;
+    --img-bg: #281A20;
+    --on-dark: #110A0D;
+    --on-accent: #170F12;
   }
 
   * { box-sizing: border-box; }
@@ -185,7 +187,7 @@
   @media (min-width: 760px) { .all-band { grid-template-columns: 1fr auto; } }
   .all-band h3 { color: var(--on-dark); font-size: 1.3rem; font-style: italic; }
   .all-band p { margin-top: 0.4rem; font-size: 0.96rem; color: var(--on-dark); opacity: 0.85; }
-  .all-band .btn-solid { background: var(--leaf-br); color: #1F2A1A; }
+  .all-band .btn-solid { background: var(--leaf-br); color: #4E1A2E; }
   .all-band .btn-solid:hover { background: var(--on-dark); }
   :root[data-theme="dark"] .all-band { background: var(--card); border: 1px solid var(--line); }
   :root[data-theme="dark"] .all-band h3, :root[data-theme="dark"] .all-band p { color: var(--ink); }
@@ -240,7 +242,7 @@
   .contact-band .section-intro { color: var(--on-dark); opacity: 0.87; margin-inline: auto; }
   .contact-band .hero-ctas { justify-content: center; }
   .contact-band .btn-solid { background: var(--leaf); color: #FFFFFF; }
-  .contact-band .btn-solid:hover { background: var(--leaf-br); color: #1F2A1A; }
+  .contact-band .btn-solid:hover { background: var(--leaf-br); color: #4E1A2E; }
   .contact-band .btn-ghost { border-color: var(--on-dark); color: var(--on-dark); }
   .contact-band .btn-ghost:hover { border-color: var(--leaf-br); color: var(--leaf-br); }
   .contact-band .fine { margin-top: 1.45rem; color: var(--on-dark); opacity: 0.84; font-size: 0.92rem; }
@@ -267,6 +269,16 @@
   footer.site p { margin-top: 0.3rem; }
   footer.site a { color: inherit; }
   footer.site .fineprint { font-size: 0.78rem; max-width: 52em; margin: 0.9rem auto 0; }
+
+  /* Brand logo — sits on a maroon chip, as on his shirt */
+  .logo-chip {
+    background: #8C2F4C; border-radius: 0.5rem; padding: 5px;
+    display: inline-flex; flex: none;
+  }
+  .brand .logo-chip { padding: 4px; border-radius: 0.45rem; }
+  .brand .logo { width: 34px; height: 34px; display: block; }
+  footer.site .flogo-chip { margin: 0 auto 0.9rem; padding: 10px; }
+  footer.site .flogo { width: 96px; height: 96px; display: block; }
 </style>
 </head>
 <body>
@@ -275,11 +287,7 @@
   <div class="wrap">
     <header class="site">
       <a class="brand" href="#top" aria-label="Valencia Landscaping">
-        <svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true">
-          <path d="M17 30 V16" stroke="#33402C" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M17 17 C 9 17, 5 12, 5 5 C 13 5, 17 10, 17 17 Z" fill="#4F7D3A"/>
-          <path d="M17 20 C 25 20, 29 15, 29 9 C 21 9, 17 14, 17 20 Z" fill="#659B4B"/>
-        </svg>
+        <span class="logo-chip"><img class="logo" src="img/mark.svg" alt="Valencia Landscaping"></span>
         <span class="txt">Valencia<small>Landscaping</small></span>
       </a>
       <nav class="top" aria-label="Sections">
@@ -535,6 +543,7 @@
 
 <footer class="site">
   <div class="wrap">
+    <span class="logo-chip flogo-chip"><img class="flogo" src="img/logo.svg" alt="Valencia Landscaping"></span>
     <p class="fname">Valencia Landscaping</p>
     <p class="tag"><span data-en>We take pride in a job well done.</span><span data-es>Hacemos el trabajo con orgullo.</span></p>
     <p><span data-en>Licensed C-27 landscaping contractor</span><span data-es>Contratista de jardinería con licencia C-27</span> &middot; Placerville, California</p>

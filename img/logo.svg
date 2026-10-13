@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 400" role="img" aria-label="Valencia Landscaping">
+  <defs>
+    <path id="vl-top" d="M 36 176 A 154 154 0 0 1 344 176"/>
+    <path id="vl-bot" d="M 66 244 A 124 124 0 0 0 314 244"/>
+  </defs>
+
+  <!-- laurel wreath, arcing wide around the horseshoe -->
+  <g fill="#4FCC60">
+    <path d="M96 150 C 56 194, 50 262, 76 318 C 84 334, 96 348, 110 358 L 118 345 C 105 336, 94 323, 87 308 C 65 261, 71 203, 104 162 Z"/>
+    <ellipse cx="78"  cy="196" rx="23" ry="11" transform="rotate(-58 78 196)"/>
+    <ellipse cx="64"  cy="232" rx="23" ry="11" transform="rotate(-40 64 232)"/>
+    <ellipse cx="60"  cy="270" rx="23" ry="11" transform="rotate(-20 60 270)"/>
+    <ellipse cx="67"  cy="308" rx="22" ry="11" transform="rotate(-2 67 308)"/>
+    <ellipse cx="86"  cy="340" rx="20" ry="10" transform="rotate(18 86 340)"/>
+
+    <path d="M284 150 C 324 194, 330 262, 304 318 C 296 334, 284 348, 270 358 L 262 345 C 275 336, 286 323, 293 308 C 315 261, 309 203, 276 162 Z"/>
+    <ellipse cx="302" cy="196" rx="23" ry="11" transform="rotate(58 302 196)"/>
+    <ellipse cx="316" cy="232" rx="23" ry="11" transform="rotate(40 316 232)"/>
+    <ellipse cx="320" cy="270" rx="23" ry="11" transform="rotate(20 320 270)"/>
+    <ellipse cx="313" cy="308" rx="22" ry="11" transform="rotate(2 313 308)"/>
+    <ellipse cx="294" cy="340" rx="20" ry="10" transform="rotate(-18 294 340)"/>
+  </g>
+
+  <!-- horseshoe -->
+  <path fill="#4FCC60" d="M190 128
+      c -46 0 -78 36 -78 84
+      c 0 40 13 72 27 97
+      l 28 -15
+      c -13 -22 -23 -48 -23 -82
+      c 0 -34 19 -55 46 -55
+      c 27 0 46 21 46 55
+      c 0 34 -10 60 -23 82
+      l 28 15
+      c 14 -25 27 -57 27 -97
+      c 0 -48 -32 -84 -78 -84 Z"/>
+  <g fill="#8C2F4C">
+    <circle cx="138" cy="214" r="4.8"/>
+    <circle cx="138" cy="241" r="4.8"/>
+    <circle cx="144" cy="268" r="4.8"/>
+    <circle cx="242" cy="214" r="4.8"/>
+    <circle cx="242" cy="241" r="4.8"/>
+    <circle cx="236" cy="268" r="4.8"/>
+  </g>
+
+  <!-- sprout -->
+  <g fill="#4FCC60">
+    <path d="M190 306 L190 216" stroke="#4FCC60" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M190 234 C 169 228, 158 211, 160 192 C 179 194, 190 213, 190 234 Z"/>
+    <path d="M190 234 C 211 228, 222 211, 220 192 C 201 194, 190 213, 190 234 Z"/>
+    <path d="M190 270 C 171 265, 161 250, 163 233 C 180 235, 190 252, 190 270 Z"/>
+    <path d="M190 270 C 209 265, 219 250, 217 233 C 200 235, 190 252, 190 270 Z"/>
+    <path d="M171 324 C 175 311, 182 302, 190 296 C 186 307, 181 316, 179 324 Z"/>
+    <path d="M209 324 C 205 311, 198 302, 190 296 C 194 307, 199 316, 201 324 Z"/>
+    <path d="M190 324 L190 298 C 192 307, 193 316, 193 324 Z"/>
+  </g>
+
+  <!-- wordmark -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="50" fill="#FFFFFF" letter-spacing="2">
+    <textPath href="#vl-top" startOffset="50%" text-anchor="middle">VALENCIA</textPath>
+  </text>
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="33" fill="#FFFFFF" letter-spacing="2.5">
+    <textPath href="#vl-bot" startOffset="50%" text-anchor="middle">LANDSCAPING</textPath>
+  </text>
+</svg>
