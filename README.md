@@ -127,13 +127,12 @@ rather than transparent. It was rebuilt from the client's original photo instead
 
 - `img/logo.svg` — the full crest: arched **VALENCIA**, green horseshoe with nail
   holes, sprout inside, laurel wreath both sides, **LANDSCAPING** curved below.
-  Used in the footer at 96px.
-- `img/mark.svg` — a simplified horseshoe-and-sprout version. **The full crest is
-  illegible below about 60px** (the arched wordmark turns to mush), so the header
-  uses this instead at 34px. Checked at 2x; both are legible at the sizes used.
 
-Both sit on a maroon chip, matching how the logo appears on his shirt, so they
-read against light and dark backgrounds alike.
+**The navbar is maroon**, at the client's direction, so the full crest sits
+directly on it with no chip or backing — green icon, white lettering, exactly as
+it appears on his shirt. Nav links, the language switch and the call button are
+all white on the maroon. The crest runs at 62px in the header and 96px in the
+footer; both were checked at 2x for legibility.
 
 Other design notes:
 
