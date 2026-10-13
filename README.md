@@ -125,14 +125,21 @@ dark-mode palette was re-derived to match.
 blown-out highlights, the horseshoe and laurel detail lost, and it sits on black
 rather than transparent. It was rebuilt from the client's original photo instead:
 
-- `img/logo.svg` — the full crest: arched **VALENCIA**, green horseshoe with nail
-  holes, sprout inside, laurel wreath both sides, **LANDSCAPING** curved below.
+- `img/logo-header.png` — **his own horizontal lockup**, supplied by the client:
+  the horseshoe-and-laurel emblem beside "Valencia" in white script with
+  "LANDSCAPING" in green beneath. Used in the header at 54px tall. The supplied
+  PNG is genuinely transparent (73.5% transparent pixels, zero opaque black), so
+  it sits straight on the maroon bar; it was trimmed from 2172x724 to 2099x570 to
+  remove empty margin.
+- `img/logo.svg` — the circular crest, redrawn as SVG from his shirt photo
+  (arched **VALENCIA**, horseshoe with nail holes, sprout, laurel wreath,
+  **LANDSCAPING** below). Used in the footer at 96px, where the stacked form
+  suits the centred layout.
 
-**The navbar is maroon**, at the client's direction, so the full crest sits
-directly on it with no chip or backing — green icon, white lettering, exactly as
-it appears on his shirt. Nav links, the language switch and the call button are
-all white on the maroon. The crest runs at 62px in the header and 96px in the
-footer; both were checked at 2x for legibility.
+**The navbar is maroon**, at the client's direction, so both logos sit directly
+on brand colour with no chip — green emblem, white lettering, exactly as on his
+shirt. Nav links, the language switch and the call button are white on the
+maroon, inverting on hover.
 
 Other design notes:
 
